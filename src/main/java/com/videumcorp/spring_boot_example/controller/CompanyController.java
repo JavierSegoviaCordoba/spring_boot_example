@@ -25,7 +25,7 @@ public class CompanyController {
 
     //Can have multiple paths
     //Check application.properties root path
-    //In this project: http://localhost:8080/api/v1/companies/google or http://localhost:8080/api/v1/other_path/google
+    //In this project: http://localhost:8989/api/v1/companies/google or http://localhost:8989/api/v1/other_path/google
     //Two companies: google and apple
     @RequestMapping(value = {"companies/{company_name}", "other_path/{company_name}"})
     public Company company(@PathVariable String company_name) {
